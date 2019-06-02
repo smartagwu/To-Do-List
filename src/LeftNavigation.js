@@ -3,11 +3,6 @@ import ReactDOM from 'react-dom';
 import { Icon } from 'semantic-ui-react';
 
 class LeftNavigation extends React.Component {
-
-  constructor(props){
-    super(props);
-    //this.leftNavigationItemsClick = this.leftNavigationItemsClick.bind();
-  }
   render(){
     return (
       <div className="leftNavContainer nav-color">
@@ -34,7 +29,7 @@ class NavigationItems extends React.Component {
   leftNavigationItemsClick(e){
     const newActiveListId = e.currentTarget.id;
 
-    if (newActiveListId == 'leftNavItem0') { //This is the hamburger icon
+    if (newActiveListId === 'leftNavItem0') { //This is the hamburger icon
       const isNavExpanded = this.state.isExpanded;
       if (isNavExpanded) {
         this.hideLiName();
@@ -102,7 +97,7 @@ class NavigationItems extends React.Component {
 
 
     const mappedItems = iconNames.map((liItem, index) => (
-      <li id={'leftNavItem'+(index)} className={index == 0 ? "hamburger-style" : index == 1 ? "item-selected nav-item-color" : "nav-item-color"} onClick={this.leftNavigationItemsClick}>
+      <li id={'leftNavItem'+(index)} className={index === 0 ? "hamburger-style" : index === 1 ? "item-selected nav-item-color" : "nav-item-color"} onClick={this.leftNavigationItemsClick}>
         <Icon inverted color='' name={liItem.icon} />
         <p className="nav-list-name hidden">{liItem.name}</p>
       </li>)
