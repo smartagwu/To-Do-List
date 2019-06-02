@@ -1,0 +1,16 @@
+body{
+  width: 100%;
+  height: 100%;
+}
+section{
+  width: 100%;
+}
+.app-header{
+  margin: 0 auto;
+  width: fit-content;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

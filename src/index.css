@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#root{
+  height: 100%;
+}
+.hidden{
+  display: none !important;
+}
+.color-white{
+  background-color: #FAFBFC;
+}
+.color-blue{
+  background-color: #006FD0;
+}
+.color3{
+  background-color: #DCE0E5;
+}
+.nav-color{
+  background-color: #18345D;
+}
+.nav-item-color{
+  background-color: #213d63;
+}
+.color5{
+  background-color: #B6C1CB;
+}
+.color-light-blue{
+  background-color: #5F7CB4;
+}
+.color7{
+  background-color: #A2B4CB;
+}
+.todo-mainContainer{
+  display: flex;
+  height: 100%
+}
+.leftNavContainer{
+  padding: 10px;
+  transition: .3s all ease-in-out;
+}
+.leftNavContainer ul{
+  padding: 0px;
+}
+.leftNavContainer ul li{
+  border-radius: 3px;
+  width: fit-content;
+  padding: 5px;
+  list-style: none;
+  cursor: pointer;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  transition: .3s all ease-in-out;
+}
+.leftNavContainer ul li:hover{
+  background-color: #2d647a;
+}
+.leftNavContainer ul li:hover i{
+  color: #78d3d2;
+}
+.leftNavContainer ul li:hover p{
+  color: #78d3d2;
+}
+.leftNavContainer ul .item-selected {
+  background-color: #2d647a !important;
+}
+.leftNavContainer ul .item-selected i{
+  color: #78d3d2 !important;
+}
+.leftNavContainer ul .item-selected p{
+  color: #78d3d2 !important;
+}
+.leftNavContainer ul li:first-child{
+  margin-bottom: 20px !important;
+}
+.leftNavContainer ul li:last-child{
+  margin-bottom: 0px !important;
+}
+.leftNavContainer ul li i{
+  margin: 0;
+  margin-bottom: 5px;
+}
+.leftNavContainer ul li p{
+  color: #fff;
+  font-weight: 400;
+  margin: auto;
+  margin-left: 10px;
+  transition: .3s all ease-in-out;
+}
+.hamburger-style{
+  font-size: 1.5rem;
+  background-color: transparent !important;
+}
+.hamburger-style:hover{
+  background-color: transparent !important;
+}
+.hamburger-style:hover i{
+  color: #fff !important;
+}
